@@ -1,7 +1,7 @@
-package com.abhishek.department.controller;
+package com.abhishek.payroll.controller;
 
-import com.abhishek.department.entity.Department;
-import com.abhishek.department.service.DepartmentService;
+import com.abhishek.payroll.entity.Department;
+import com.abhishek.payroll.service.PayrollService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/departments")
 @Slf4j
-public class DepartmentController {
+public class PayrollController {
     @Autowired
-    private DepartmentService departmentService;
+    private PayrollService payrollService;
 
     @PostMapping("/")
     public Department saveDepartment(@RequestBody Department department) {
         log.info("got request to save department");
-        return departmentService.saveDepartment(department);
+        return payrollService.saveDepartment(department);
     }
     @GetMapping("/{id}")
     public Department findDepartmentById(@PathVariable("id") Long departmentId) {
         log.info("request for getting department with ID: "+departmentId);
-        return departmentService.findDepartmentById(departmentId);
+        return payrollService.findDepartmentById(departmentId);
     }
 }

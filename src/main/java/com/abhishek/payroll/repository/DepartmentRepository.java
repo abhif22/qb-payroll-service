@@ -1,6 +1,6 @@
-package com.abhishek.department.repository;
+package com.abhishek.payroll.repository;
 
-import com.abhishek.department.entity.Department;
+import com.abhishek.payroll.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

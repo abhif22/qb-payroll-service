@@ -1,4 +1,4 @@
-package com.abhishek.department.entity;
+package com.abhishek.payroll.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

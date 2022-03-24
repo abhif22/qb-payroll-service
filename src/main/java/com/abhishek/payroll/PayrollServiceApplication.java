@@ -1,13 +1,13 @@
-package com.abhishek.department;
+package com.abhishek.payroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DepartmentServiceApplication {
+public class PayrollServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DepartmentServiceApplication.class, args);
+		SpringApplication.run(PayrollServiceApplication.class, args);
 	}
 
 }

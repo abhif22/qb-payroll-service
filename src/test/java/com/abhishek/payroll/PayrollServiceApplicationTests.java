@@ -1,10 +1,10 @@
-package com.abhishek.department;
+package com.abhishek.payroll;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DepartmentServiceApplicationTests {
+class PayrollServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

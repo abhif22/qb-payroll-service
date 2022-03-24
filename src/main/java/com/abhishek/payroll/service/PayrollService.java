@@ -1,14 +1,14 @@
-package com.abhishek.department.service;
+package com.abhishek.payroll.service;
 
-import com.abhishek.department.entity.Department;
-import com.abhishek.department.repository.DepartmentRepository;
+import com.abhishek.payroll.entity.Department;
+import com.abhishek.payroll.repository.DepartmentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class DepartmentService {
+public class PayrollService {
 
     @Autowired
     private DepartmentRepository departmentRepository;
